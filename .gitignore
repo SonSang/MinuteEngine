@@ -1,0 +1,13 @@
+Debug/
+Release/
+Dependencies/
+x64/
+MinuteEngine/bin
+MinuteEngine/Debug
+MinuteEngine/Release
+MinuteEngine/x64
+MinuteEngine/resources/textures
+
+*.vs
+*.ini
+

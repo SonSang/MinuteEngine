@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\ImGui">
+      <UniqueIdentifier>{633e35b3-8ccf-4a44-afe5-2508cfc04ddc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Shader">
+      <UniqueIdentifier>{cce48605-48b8-443f-acc4-d69eeaf5f523}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Shader\glsl">
+      <UniqueIdentifier>{b4824265-0789-4f0d-9067-c90b22426f48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Shader\glsl\110">
+      <UniqueIdentifier>{04d00c4d-3d8f-415d-b3ac-14d80963d677}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Shader\glsl\330">
+      <UniqueIdentifier>{61999f8a-75d9-4f0b-b341-a687cc99a553}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IO.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Render.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Property.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\imgui\imgui.cpp">
+      <Filter>소스 파일\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\imgui\examples\imgui_impl_opengl3.cpp">
+      <Filter>소스 파일\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\imgui\examples\imgui_impl_sdl.cpp">
+      <Filter>소스 파일\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\imgui\imgui_demo.cpp">
+      <Filter>소스 파일\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\imgui\imgui_draw.cpp">
+      <Filter>소스 파일\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\imgui\imgui_widgets.cpp">
+      <Filter>소스 파일\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="UI.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MinuteEngine.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IO.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Render.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Property.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Shadow.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader\ShadowmapShader.h">
+      <Filter>헤더 파일\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader\StandardShader.h">
+      <Filter>헤더 파일\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader\SkyboxShader.h">
+      <Filter>헤더 파일\Shader</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shader\glsl\110\shadowmapF.glsl">
+      <Filter>헤더 파일\Shader\glsl\110</Filter>
+    </None>
+    <None Include="Shader\glsl\110\shadowmapV.glsl">
+      <Filter>헤더 파일\Shader\glsl\110</Filter>
+    </None>
+    <None Include="Shader\glsl\110\simpleF.glsl">
+      <Filter>헤더 파일\Shader\glsl\110</Filter>
+    </None>
+    <None Include="Shader\glsl\110\simpleV.glsl">
+      <Filter>헤더 파일\Shader\glsl\110</Filter>
+    </None>
+    <None Include="Shader\glsl\110\skyboxF.glsl">
+      <Filter>헤더 파일\Shader\glsl\110</Filter>
+    </None>
+    <None Include="Shader\glsl\110\skyboxV.glsl">
+      <Filter>헤더 파일\Shader\glsl\110</Filter>
+    </None>
+    <None Include="Shader\glsl\110\standardF.glsl">
+      <Filter>헤더 파일\Shader\glsl\110</Filter>
+    </None>
+    <None Include="Shader\glsl\110\standardV.glsl">
+      <Filter>헤더 파일\Shader\glsl\110</Filter>
+    </None>
+    <None Include="Shader\glsl\110\testF.glsl">
+      <Filter>헤더 파일\Shader\glsl\110</Filter>
+    </None>
+    <None Include="Shader\glsl\110\testV.glsl">
+      <Filter>헤더 파일\Shader\glsl\110</Filter>
+    </None>
+    <None Include="Shader\glsl\330\standard.vert">
+      <Filter>헤더 파일\Shader\glsl\330</Filter>
+    </None>
+    <None Include="Shader\glsl\330\standard.frag">
+      <Filter>헤더 파일\Shader\glsl\330</Filter>
+    </None>
+    <None Include="Shader\glsl\330\shadowmap.vert">
+      <Filter>헤더 파일\Shader\glsl\330</Filter>
+    </None>
+    <None Include="Shader\glsl\330\shadowmap.frag">
+      <Filter>헤더 파일\Shader\glsl\330</Filter>
+    </None>
+    <None Include="Shader\glsl\330\skybox.vert">
+      <Filter>헤더 파일\Shader\glsl\330</Filter>
+    </None>
+    <None Include="Shader\glsl\330\skybox.frag">
+      <Filter>헤더 파일\Shader\glsl\330</Filter>
+    </None>
+  </ItemGroup>
+</Project>
