@@ -1,62 +1,47 @@
 # MinuteEngine
-C++ framework using modern OpenGL that supports basic rendering functions and provides graphics programmingenvironment : Scene graph, Geometry, Lighting, Shading, Texturing, Shadow, etc.
+
 
 <p align="center">
   <img src="/Image/main.png" width="1080" height="540">
 </p>
 
-1. Scene graph
+**C++ framework using modern OpenGL that supports basic rendering functions and provides graphics programmingenvironment : Scene graph, Geometry, Lighting, Shading, Texturing, Shadow, etc**.
+
+# Scene Graph
+With simple GUI (which is implemented using [ImGui](https://github.com/ocornut/imgui)), user can control objects located in the scene. The objects in the scene can form a hierarchy and render calls follow the structure. Each object in the scene has its own properties for rendering and transformation. 
 
 <p align="center">
   <img src="/Image/scene_graph.gif" width="1080" height="540">
 </p>
 
-<p align="center">With simple GUI (which is implemented using ImGui), you can control objects in the scene.</p>
-<p align="center">They form a hierarchy and has their own properties for rendering and transformation.</p>
-
-2. Geometry
+# Geometry
+User can draw various simple geometric objects - like cube and sphere - using triangles or quads. Also, if user has surface information (of teapot, for example), the user can render it with triangles or quads.
 
 <p align="center">
   <img src="/Image/geometry_simple.png" width="1080" height="540">
   <img src="/Image/geometry_teapot.png" width="1080" height="540">
 </p>
 
-<p align="center">You can draw various simple objects such as cube or sphere using triangles or quads.</p>
-<p align="center">Also, if you have surface information (of teapot, for example), you can draw it with triangles or quads.</p>
-
-3. Lighting
-
+# Lighting
+There are two basic lights implemented in this framework : directional and point light. User can change a light's position, direction, and color traits at runtime.
 <p align="center">
   <img src="/Image/lighting.gif" width="1080" height="540">
 </p>
 
-<p align="center">There are two basic lights implemented in MinuteEngine : Directional and Point light.</p>
-<p align="center">You can change their positions, directions, and color traits at runtime.</p>
-
-
-4. Shading
-
+# Shading
+User can render objects in the scene with various shading methods. The user can render them with only wireframe, or with simple color, or with materials, or with textures.
 <p align="center">
   <img src="/Image/shading.gif" width="1080" height="540">
 </p>
 
-<p align="center">You can draw objects in the scene with various shading methods.</p>
-<p align="center">You can draw them with only wireframe, or with simple color, or with materials, or with textures.</p>
-
-5. Texturing
-
+# Texturing
+User can decorate objects with fancy textures. The user can use diffuse, specular, normal, and parallax textures to render his/her objects.
 <p align="center">
   <img src="/Image/texture.png" width="1080" height="540">
 </p>
 
-<p align="center">You can decorate objects in the scene with marvelous textures.</p>
-<p align="center">Not only diffuse and specular textures, you can also use normal maps and parallax maps.</p>
-
-6. Shadow
-
+# Shadow
+This framework uses shadow maps to render shadows of objects in real time. When geometry of objects or lights in the scene change, shadows are updated immediately.
 <p align="center">
   <img src="/Image/shadow.gif" width="1080" height="540">
 </p>
-
-<p align="center">MinuteEngine uses shadow maps to draw shadows of objects in real time.</p>
-<p align="center">When geometry of objects or lights in the scene change, shadows are updated immediately.</p>
