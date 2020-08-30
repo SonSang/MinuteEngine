@@ -5,7 +5,7 @@
   <img src="/Image/main.png" width="1080" height="540">
 </p>
 
-**C++ framework using modern OpenGL that supports basic rendering functions and provides graphics programmingenvironment : Scene graph, Geometry, Lighting, Shading, Texturing, Shadow, etc**.
+**C++ framework using modern OpenGL that supports basic rendering functions and provides graphics programming environment : Scene graph, Geometry, Lighting, Shading, Texturing, Shadow, etc**.
 
 # Scene Graph
 With simple GUI (which is implemented using [ImGui](https://github.com/ocornut/imgui)), user can control objects located in the scene. The objects in the scene can form a hierarchy and render calls follow the structure. Each object in the scene has its own properties for rendering and transformation. 
