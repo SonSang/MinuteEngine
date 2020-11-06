@@ -322,6 +322,11 @@ namespace ME {
 			inputLight.setDiffuse(ME::Color::create(diffuse[0], diffuse[1], diffuse[2]));
 			inputLight.setSpecular(ME::Color::create(specular[0], specular[1], specular[2]));
 
+			// Shadow
+			bool useShadow = inputLight.shadow.getValid();
+			ImGui::Checkbox("Use Shadow", &useShadow);
+			inputLight.shadow.setValid(useShadow);
+
 			lightManager.lights[lightID] = inputLight;
 		}
 
