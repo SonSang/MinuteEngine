@@ -344,7 +344,7 @@ namespace ME {
 				enable();
 
 				setUnifMat4(uModelMat(), modelMat);
-				setUnifVec3(uFaceColor(), option.faceColor);
+				setUnifVec3(uEdgeColor(), option.edgeColor);
 				setUnifFloat(uAlpha(), option.alpha);
 				setUnifBool(uPolygonMode(), true);
 				setUnifBool(uPhongMode(), false);
