@@ -122,8 +122,9 @@ namespace ME {
 			float edgeWidth = 1.0f;
 
 			// Colors
-			Color color = Color::red();
+			Color faceColor = Color::red();
 			Material material = Material::red();
+			float alpha = 1.0f;
 
 			// Textures
 			Texture2D diffuseMap;

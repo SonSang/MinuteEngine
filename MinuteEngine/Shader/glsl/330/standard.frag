@@ -20,8 +20,10 @@ struct Material {
     float shininess;
 };
 
-uniform vec3 color;
+uniform vec3 faceColor;
 uniform vec3 edgeColor;     // Only needed for geometric entities with face.
+uniform float alpha;
+
 uniform bool polygonMode;   // If true, render face (GL_FILL). Else, render line (GL_LINE).
 uniform bool textureMode;   // If true, use texture to render instead of material.
 uniform bool phongMode;     // If true, use Phong shading. Else, use simple shading. 
@@ -264,16 +266,16 @@ void main(void) {
 
     if(polygonMode) {
         if (textureMode)
-            FragColor = vec4(renderByTexture(), 1.0);
+            FragColor = vec4(renderByTexture(), alpha);
         else {
             if (phongMode)
-                FragColor = vec4(renderByMaterial(), 1.0);
+                FragColor = vec4(renderByMaterial(), alpha);
             else
-                FragColor = vec4(color, 1.0);
+                FragColor = vec4(faceColor, alpha);
         }        
     }
     else
-        FragColor = vec4(edgeColor, 1.0);
+        FragColor = vec4(edgeColor, alpha);
 }
 
 /* ================================== Phong shading by light =================================== */

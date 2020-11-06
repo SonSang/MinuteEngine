@@ -44,6 +44,7 @@ namespace ME {
         bool setUnifInt(const std::string& var, int i) const;
         bool setUnifFloat(const std::string& var, float f) const;
         bool setUnifVec3(const std::string& var, const glm::vec3& vec) const;   // Return true if succeeded.
+        bool setUnifVec4(const std::string& var, const glm::vec4& vec) const;   // Return true if succeeded.
         bool setUnifMat4(const std::string& var, const glm::mat4& mat) const;
         bool setUnifBool(const std::string& var, bool b) const;
 

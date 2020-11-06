@@ -186,6 +186,14 @@ namespace ME {
         glUniform3fv(loc, 1, glm::value_ptr(vec));
         return true;
     }
+    bool Shader::setUnifVec4(const std::string& var, const glm::vec4& vec) const {
+        enable();
+        int loc = getUnifLoc(var);
+        if (loc == -1)
+            return false;
+        glUniform4fv(loc, 1, glm::value_ptr(vec));
+        return true;
+    }
     bool Shader::setUnifMat4(const std::string& var, const glm::mat4& mat) const {
         enable();
         int loc = getUnifLoc(var);

@@ -49,11 +49,14 @@ namespace ME {
 			return "projMat";
 		}
 
-		inline static std::string uColor() noexcept {
-			return "color";
+		inline static std::string uFaceColor() noexcept {
+			return "faceColor";
 		}
 		inline static std::string uEdgeColor() noexcept {
 			return "edgeColor";
+		}
+		inline static std::string uAlpha() {
+			return "alpha";
 		}
 
 		inline static std::string uPolygonMode() noexcept {
@@ -81,7 +84,7 @@ namespace ME {
 		inline static std::string uMaterialShininess() {
 			return "material.shininess";
 		}
-
+		
 		inline static std::string uDiffuseMap() {
 			return "diffuseMap";
 		}
@@ -325,8 +328,10 @@ namespace ME {
 				enable();
 
 				setUnifMat4(uModelMat(), modelMat);
-				setUnifVec3(uColor(), option.color);
+				setUnifVec3(uFaceColor(), option.faceColor);
+				setUnifFloat(uAlpha(), option.alpha);
 				setUnifBool(uPolygonMode(), true);
+				setUnifBool(uTextureMode(), false);
 				setUnifBool(uPhongMode(), false);
 				glPointSize(option.edgeWidth);
 
@@ -339,7 +344,8 @@ namespace ME {
 				enable();
 
 				setUnifMat4(uModelMat(), modelMat);
-				setUnifVec3(uColor(), option.color);
+				setUnifVec3(uFaceColor(), option.faceColor);
+				setUnifFloat(uAlpha(), option.alpha);
 				setUnifBool(uPolygonMode(), true);
 				setUnifBool(uPhongMode(), false);
 				glLineWidth(option.edgeWidth);
@@ -361,7 +367,7 @@ namespace ME {
 
 					if (option.shadeMode == 0) {
 						// Simple shading, use(basic) color without lighting
-						setUnifVec3(uColor(), option.color);
+						setUnifVec3(uFaceColor(), option.faceColor);
 						setUnifBool(uPhongMode(), false);
 						setUnifBool(uTextureMode(), false);
 					}
@@ -396,11 +402,13 @@ namespace ME {
 						setUnifBool(uEmMode(), option.emMode);
 						setUnifFloat(uEmFactor(), option.emFactor);
 					}
+					setUnifFloat(uAlpha(), option.alpha);
 					glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 					glDrawElements(GL_TRIANGLES, 3 * option.drawNum, GL_UNSIGNED_INT, 0);
 				}
 				if (option.drawEdge) {
 					setUnifVec3(uEdgeColor(), option.edgeColor);
+					setUnifFloat(uAlpha(), option.alpha);
 					setUnifBool(uPolygonMode(), false);
 					glLineWidth(option.edgeWidth);
 					glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
@@ -421,7 +429,7 @@ namespace ME {
 
 					if (option.shadeMode == 0) {
 						// Simple shading, use(basic) color without lighting
-						setUnifVec3(uColor(), option.color);
+						setUnifVec3(uFaceColor(), option.faceColor);
 						setUnifBool(uPhongMode(), false);
 						setUnifBool(uTextureMode(), false);
 					}
@@ -456,11 +464,13 @@ namespace ME {
 						setUnifBool(uEmMode(), option.emMode);
 						setUnifFloat(uEmFactor(), option.emFactor);
 					}
+					setUnifFloat(uAlpha(), option.alpha);
 					glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 					glDrawElements(GL_QUADS, 4 * option.drawNum, GL_UNSIGNED_INT, 0);
 				}
 				if (option.drawEdge) {
 					setUnifVec3(uEdgeColor(), option.edgeColor);
+					setUnifFloat(uAlpha(), option.alpha);
 					setUnifBool(uPolygonMode(), false);
 					glLineWidth(option.edgeWidth);
 					glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);

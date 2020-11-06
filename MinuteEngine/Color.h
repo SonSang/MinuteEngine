@@ -24,6 +24,13 @@ namespace ME {
 		static Color red() noexcept;
 		static Color green() noexcept;
 		static Color blue() noexcept;
+		static Color yellow() noexcept;
+		static Color pink() noexcept;
+		static Color cyan() noexcept;
+		static Color brown() noexcept;
+		static Color beige() noexcept;
+		static Color purple() noexcept;
+
 		static Color random(bool randOpacity = false) noexcept;
 	};
 }

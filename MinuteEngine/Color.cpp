@@ -34,6 +34,24 @@ namespace ME {
 	Color Color::blue() noexcept {
 		return create(0.0f, 0.0f, 1.0f);
 	}
+	Color Color::yellow() noexcept {
+		return create(255.0f / 255.0f, 255.0f / 255.0f, 0.0f / 255.0f, 1.0f);
+	}
+	Color Color::pink() noexcept {
+		return create(255.0f / 255.0f, 0.0f / 255.0f, 255.0f / 255.0f, 1.0f);
+	}
+	Color Color::cyan() noexcept {
+		return create(0.0f / 255.0f, 255.0f / 255.0f, 255.0f / 255.0f, 1.0f);
+	}
+	Color Color::brown() noexcept {
+		return create(128.0f / 255.0f, 0.0f / 255.0f, 0.0f / 255.0f, 1.0f);
+	}
+	Color Color::beige() noexcept {
+		return create(255.0f / 255.0f, 255.0f / 255.0f, 204.0f / 255.0f, 1.0f);
+	}
+	Color Color::purple() noexcept {
+		return create(153.0f / 255.0f, 51.0f / 255.0f, 102.0f / 255.0f, 1.0f);
+	}
 	Color Color::random(bool randOpacity) noexcept {
 		Color c;
 		c[0] = glm::linearRand(0.0f, 1.0f);

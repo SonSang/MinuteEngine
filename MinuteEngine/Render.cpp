@@ -69,19 +69,24 @@ namespace ME {
 		ImGui::InputFloat("Edge Width", &option.edgeWidth);
 
 		// Face Setting
-		float faceColor[3] = { option.color.r, option.color.g, option.color.b };
+		float faceColor[3] = { option.faceColor.r, option.faceColor.g, option.faceColor.b };
 		ImGui::ColorEdit3("Face Color", faceColor);
-		option.color.r = faceColor[0];
-		option.color.g = faceColor[1];
-		option.color.b = faceColor[2];
+		option.faceColor.r = faceColor[0];
+		option.faceColor.g = faceColor[1];
+		option.faceColor.b = faceColor[2];
 
 		// Material
 		float matColor[3] = {
 			option.material.getDiffuse().r,
 			option.material.getDiffuse().g,
-			option.material.getDiffuse().b };
+			option.material.getDiffuse().b,
+		};
 		ImGui::ColorEdit3("Face Material(Diffuse)", matColor);
 		option.material.setDiffuse(Color::create(matColor[0], matColor[1], matColor[2]));
+
+		float alpha = option.alpha;
+		ImGui::InputFloat("Alpha", &alpha);
+		option.alpha = alpha;
 
 		// Environment Mapping
 		ImGui::Checkbox("Env Mapping", &option.emMode);
