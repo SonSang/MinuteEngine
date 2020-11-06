@@ -346,7 +346,8 @@ namespace ME {
 				setUnifMat4(uModelMat(), modelMat);
 				setUnifVec3(uEdgeColor(), option.edgeColor);
 				setUnifFloat(uAlpha(), option.alpha);
-				setUnifBool(uPolygonMode(), true);
+				setUnifBool(uPolygonMode(), false);
+				setUnifBool(uTextureMode(), false);
 				setUnifBool(uPhongMode(), false);
 				glLineWidth(option.edgeWidth);
 
